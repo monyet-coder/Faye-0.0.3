@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ui="http://faye-ui-library">
+<head>
+    <title>{$title}</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <ui:stylesheets items="{$styles}" />
+    <ui:scripts items="{$scripts}" />
+</head>
+<body>
+    <ui:group-box margin="{CSS::EXTRA_LARGE}" title="Login Form" icon="http://docs.gimp.org/en/images/dialogs/stock-edit-16.png">
+        <ui:text>Please input your username and password.</ui:text>
+
+        <ui:form action="{$loginAction}" asynchronous-action="{$loginAction}">
+            <ui:grid id="login-form" column="{$column}">
+                Username : <ui:text-field name="username" ghost-text="please input username ..." />
+                Password : <ui:password name="password" ghost-text="please input password ..." />
+                Birth Date : <ui:date value="2011-05-17" name="birth_date" />
+                Gender : <ui:combo-box options="{$gender}" name="gender" />
+                Suggestion : <ui:typeahead source="{$suggestions}" />
+                <ui:button icon="http://cdn3.iconfinder.com/data/icons/sweetiev3/png-24/12-em-check.png">Login</ui:button>
+            </ui:grid>
+        </ui:form>
+        <!--
+        <ui:for each="{$items}" as="{$item}">
+            <ui:list-item>{$item}</ui:list-item>
+        </ui:for>
+        -->
+    </ui:group-box>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ui="http://faye-ui-library">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>UI Template</title>
+<link href="http://localhost/faye.0.0.2/application/resource/css/ui/ui.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+    <ui:form method="post" async="http://localhost/faye.0.0.2">
+        <ui:grid column="2" color="{$xxx}">
+            Username <ui:text-field name="username" />
+            Password <ui:password name="password" />
+            <ui:image id="register-captcha" src="http://localhost/indnesia" /> <ui:button>Submit</ui:button></ui:grid>
+    </ui:form>
+
+    <ui:text id="anjing">
+        tau anjing ga ??
+    </ui:text>
+</body>
+</html>

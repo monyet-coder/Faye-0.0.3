@@ -1,0 +1,21 @@
+.ui-ghost-text {
+    color: #898989;
+}
+
+.ui-group-box.collapse {
+    height: 1px;
+    overflow: hidden;
+}
+
+.ui-placeholder {
+    list-style: none;
+    padding: 0; margin: 0;
+    border:1px solid #898989;
+    border-top:none;
+}
+
+.ui-placeholder li:hover, 
+.ui-placeholder li.active {
+    background-color: #cdcdcd;
+    cursor: pointer;
+}
