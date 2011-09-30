@@ -10,7 +10,7 @@ class Autoload extends Singleton {
     protected $storage = NULL;
 
     public function __construct () {
-        $this->storage = new Storage('D:\cache.php');
+        #$this->storage = new Storage('D:\cache.php');
 
         $this->register(array($this, 'load'));
     }
